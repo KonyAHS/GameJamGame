@@ -37,10 +37,10 @@
     {"id":{"name":"PlayerFunctions","path":"scripts/PlayerFunctions/PlayerFunctions.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Map","path":"rooms/Map/Map.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Map","path":"rooms/Map/Map.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

@@ -28,3 +28,24 @@ function calulate_movement(){
 		y += _verticalMove;
 	}
 }
+
+function collision(){
+	var _goalX = x;
+	var _goalY = y;
+
+	x = xprevious;
+	y = yprevious;
+
+	var _distancex = abs(_goalX - x);
+	var _distancey = abs(_goalY - y);
+
+	repeat(_distancex){
+		if place_meeting(x + sign(_goalX - x), y, o_solid)
+		x += sign(_goalX - x);
+	}
+
+	repeat(_distancey){
+		if place_meeting(x, y + sign(_goalY - y), o_solid)
+		y += sign(_goalY - y);
+	}
+}
