@@ -1,5 +1,30 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
+
+function reset_variables(){
+	left = 0;
+	right = 0;
+	up = 0;
+	down = 0;
+}
+
 function PlayerFunctions(){
-	x = 10
+	if keyboard_check_pressed(ord("A")) left = 1;
+	if keyboard_check_pressed(ord("D")) right = 1;
+	if keyboard_check_pressed(ord("W"))	up = 1;
+	if keyboard_check_pressed(ord("S")) down = 1;
+}	
+
+function calulate_movement(){
+	var _horizontalMove = (right - left);
+	var _verticalMove = (down - up);
+
+	if _horizontalMove != 0 or _verticalMove != 0{
+		var _direction = point_direction(0, 0, _horizontalMove, _verticalMove);
+
+		_horizontalMove = lengthdir_x(walking_speed, _direction);
+		_verticalMove = lengthdir_y(walking_speed, _direction);
+
+		x += _horizontalMove;
+		y += _verticalMove;
+	}
 }
