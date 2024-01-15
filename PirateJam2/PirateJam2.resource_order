@@ -15,9 +15,14 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Entity","order":16,"path":"folders/Entity.yy",},
+    {"name":"Enemy","order":1,"path":"folders/Entity/Enemy.yy",},
+    {"name":"Controll","order":17,"path":"folders/Controll.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"CollisionBox","order":1,"path":"sprites/CollisionBox/CollisionBox.yy",},
     {"name":"collisionBox","order":1,"path":"objects/collisionBox/collisionBox.yy",},
+    {"name":"o_enemy","order":2,"path":"objects/o_enemy/o_enemy.yy",},
+    {"name":"enemy_parent","order":3,"path":"objects/enemy_parent/enemy_parent.yy",},
   ],
 }
