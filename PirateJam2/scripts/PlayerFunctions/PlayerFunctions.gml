@@ -8,10 +8,11 @@ function reset_variables(){
 }
 
 function PlayerFunctions(){
-	if keyboard_check_pressed(ord("A")) left = 1;
-	if keyboard_check_pressed(ord("D")) right = 1;
-	if keyboard_check_pressed(ord("W"))	up = 1;
-	if keyboard_check_pressed(ord("S")) down = 1;
+	if keyboard_check(ord("A")) left = 1;
+	if keyboard_check(ord("D")) right = 1;
+	if keyboard_check(ord("W"))	up = 1;
+	if keyboard_check(ord("S")) down = 1;
+	
 }	
 
 function calulate_movement(){
@@ -40,12 +41,12 @@ function collision(){
 	var _distancey = abs(_goalY - y);
 
 	repeat(_distancex){
-		if place_meeting(x + sign(_goalX - x), y, o_solid)
+		if !place_meeting(x + sign(_goalX - x), y, collisionBox)
 		x += sign(_goalX - x);
 	}
 
 	repeat(_distancey){
-		if place_meeting(x, y + sign(_goalY - y), o_solid)
+		if !place_meeting(x, y + sign(_goalY - y), collisionBox)
 		y += sign(_goalY - y);
 	}
 }

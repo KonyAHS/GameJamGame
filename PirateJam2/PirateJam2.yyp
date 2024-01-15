@@ -35,7 +35,9 @@
   },
   "resources": [
     {"id":{"name":"PlayerFunctions","path":"scripts/PlayerFunctions/PlayerFunctions.yy",},},
+    {"id":{"name":"CollisionBox","path":"sprites/CollisionBox/CollisionBox.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
+    {"id":{"name":"collisionBox","path":"objects/collisionBox/collisionBox.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
     {"id":{"name":"Map","path":"rooms/Map/Map.yy",},},
   ],

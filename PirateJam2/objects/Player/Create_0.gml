@@ -1,3 +1,3 @@
-walking_speed = 2
+walking_speed = 5
 
 
