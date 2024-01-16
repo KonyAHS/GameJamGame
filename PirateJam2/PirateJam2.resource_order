@@ -1,6 +1,9 @@
 {
   "FolderOrderSettings": [
     {"name":"Animation Curves","order":12,"path":"folders/Animation Curves.yy",},
+    {"name":"Controll","order":17,"path":"folders/Controll.yy",},
+    {"name":"Entity","order":16,"path":"folders/Entity.yy",},
+    {"name":"Enemy","order":1,"path":"folders/Entity/Enemy.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
@@ -15,14 +18,13 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Entity","order":16,"path":"folders/Entity.yy",},
-    {"name":"Enemy","order":1,"path":"folders/Entity/Enemy.yy",},
-    {"name":"Controll","order":17,"path":"folders/Controll.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"CollisionBox","order":1,"path":"sprites/CollisionBox/CollisionBox.yy",},
     {"name":"collisionBox","order":1,"path":"objects/collisionBox/collisionBox.yy",},
     {"name":"o_enemy","order":2,"path":"objects/o_enemy/o_enemy.yy",},
     {"name":"enemy_parent","order":3,"path":"objects/enemy_parent/enemy_parent.yy",},
+    {"name":"PlayerControl","order":2,"path":"objects/PlayerControl/PlayerControl.yy",},
+    {"name":"Player2","order":3,"path":"objects/Player2/Player2.yy",},
   ],
 }

@@ -12,6 +12,9 @@
   "defaultScriptType": 1,
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Controll","folderPath":"folders/Controll.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Entity","folderPath":"folders/Entity.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemy","folderPath":"folders/Entity/Enemy.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Extensions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Fonts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
@@ -26,9 +29,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Entity","folderPath":"folders/Entity.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemy","folderPath":"folders/Entity/Enemy.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Controll","folderPath":"folders/Controll.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -46,6 +46,8 @@
     {"id":{"name":"o_game","path":"objects/o_game/o_game.yy",},},
     {"id":{"name":"enemy_parent","path":"objects/enemy_parent/enemy_parent.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
+    {"id":{"name":"PlayerControl","path":"objects/PlayerControl/PlayerControl.yy",},},
+    {"id":{"name":"Player2","path":"objects/Player2/Player2.yy",},},
     {"id":{"name":"Map","path":"rooms/Map/Map.yy",},},
   ],
   "RoomOrderNodes": [
