@@ -39,7 +39,9 @@
   "resources": [
     {"id":{"name":"PlayerFunctions","path":"scripts/PlayerFunctions/PlayerFunctions.yy",},},
     {"id":{"name":"Player_run","path":"sprites/Player_run/Player_run.yy",},},
+    {"id":{"name":"projectile","path":"sprites/projectile/projectile.yy",},},
     {"id":{"name":"enemy","path":"sprites/enemy/enemy.yy",},},
+    {"id":{"name":"o_projectile","path":"objects/o_projectile/o_projectile.yy",},},
     {"id":{"name":"CollisionBox","path":"sprites/CollisionBox/CollisionBox.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"o_enemy2","path":"objects/o_enemy2/o_enemy2.yy",},},
