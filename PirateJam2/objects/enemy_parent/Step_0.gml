@@ -25,10 +25,10 @@ if (place_meeting(x, y, PlayerControl)) {
 
     // Destroy object if HP is below zero
     if (hp <= 0) {
+		spawnZombie();
         instance_destroy();
     }
 		
    
 }
 
-mp_potential_step(PlayerControl.x,PlayerControl.y,-move_spd,false)

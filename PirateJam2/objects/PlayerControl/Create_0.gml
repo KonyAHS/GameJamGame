@@ -4,11 +4,11 @@
 
 // Initialize array to store zombies
 if (!variable_global_exists("zombies")) {
-    zombies = ds_list_create();
+    global.zombies = ds_list_create();
 }
 
 // Add the original zombie (Player) to the zombies list
-ds_list_add(zombies, Player);
-spawnedZombies=0
-spawnRadius = 50;
-numZombiesInCircle = 8;
+ds_list_add(global.zombies, Player);
+global.spawnedZombies=0
+global.spawnRadius = 50;
+global.numZombiesInCircle = 8;
