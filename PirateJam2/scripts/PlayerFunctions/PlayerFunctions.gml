@@ -39,9 +39,9 @@ function collision(){
 
 	var _distancex = abs(_goalX - x);
 	var _distancey = abs(_goalY - y);
-
+ 
 	repeat(_distancex){
-		if !place_meeting(x + sign(_goalX - x), y, collisionBox)
+		if !place_meeting(x + sign(_goalX - x), y, collisionBox) 
 		x += sign(_goalX - x);
 	}
 
@@ -50,3 +50,5 @@ function collision(){
 		y += sign(_goalY - y);
 	}
 }
+
+

@@ -9,3 +9,6 @@ if (!variable_global_exists("zombies")) {
 
 // Add the original zombie (Player) to the zombies list
 ds_list_add(zombies, Player);
+spawnedZombies=0
+spawnRadius = 50;
+numZombiesInCircle = 8;

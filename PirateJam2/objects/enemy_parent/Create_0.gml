@@ -7,4 +7,5 @@ alret_dis=100;
 pause_duration=0;
 pause_time=10;
 
-move_spd=2;
+move_spd=5;
+path=-1

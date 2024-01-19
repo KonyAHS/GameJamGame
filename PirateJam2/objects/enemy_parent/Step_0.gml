@@ -2,9 +2,10 @@
 // Enemy Step Event
 
 // Collision detection, knockback, damage, and pause
-if (place_meeting(x, y, Player)) {
+if (place_meeting(x, y, PlayerControl)) {
     // Get the specific player instance
-    var player_instance = instance_place(x, y, Player);
+	
+    var player_instance = instance_place(x, y, PlayerControl);
 	pause_duration=pause_time;
     // Knockback
     var dx = x - player_instance.x; // Displacement between enemy and player
@@ -26,43 +27,8 @@ if (place_meeting(x, y, Player)) {
     if (hp <= 0) {
         instance_destroy();
     }
+		
    
 }
 
-// Check if paused
-if (pause_duration > 0) {
-    dx = 0; // Stop movement while paused
-    dy = 0;
-    pause_duration -= 1; // Decrement pause duration
-} else {
-    // Get direction vector to player (only when not paused)
-  
-        dx = Player.x - x;
-        dy = Player.y - y;
-
-        // Normalize and scale direction
-        var length = sqrt(dx * dx + dy * dy);
-        dx /= length;
-        dy /= length;
-        dx *= move_spd;
-        dy *= move_spd;
-    
-}
-
-// Check for collisions and adjust movement
-if (place_meeting(x + dx, y, collisionBox)) {
-    dx = -dx; // Bounce horizontally
-}
-if (place_meeting(x, y + dy, collisionBox)) {
-    dy = -dy; // Bounce vertically
-}
-
-
-// Move the enemy (only if not paused)
-if (pause_duration <= 0) {
-    x += dx;
-    y += dy;
-}
-
-// Add additional enemy behavior and logic here
-
+mp_potential_step(PlayerControl.x,PlayerControl.y,-move_spd,false)
