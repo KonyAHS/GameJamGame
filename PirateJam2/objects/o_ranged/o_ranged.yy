@@ -1,8 +1,9 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_enemy2",
+  "name": "o_ranged",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
@@ -26,13 +27,18 @@
   "physicsRestitution": 0.1,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsShapePoints": [],
+  "physicsShapePoints": [
+    {"x":0.0,"y":0.0,},
+    {"x":80.0,"y":0.0,},
+    {"x":80.0,"y":80.0,},
+    {"x":0.0,"y":80.0,},
+  ],
   "physicsStartAwake": true,
   "properties": [],
   "solid": true,
   "spriteId": {
-    "name": "Sprite2",
-    "path": "sprites/Sprite2/Sprite2.yy",
+    "name": "Sprite7",
+    "path": "sprites/Sprite7/Sprite7.yy",
   },
   "spriteMaskId": null,
   "visible": true,

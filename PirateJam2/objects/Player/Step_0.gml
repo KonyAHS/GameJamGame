@@ -7,11 +7,18 @@ calulate_movement()
 
 var aimDir=point_direction(x,y,mouse_x,mouse_y)
 show_debug_message(string(aimDir))
+if(time<=0){
 if(mouse_check_button(mb_left)){
-	
+	time=cooldown;
 	var _projectile=instance_create_depth(x,y,depth-100,o_projectile)
 	with(_projectile){
 
 		dir=aimDir;
 	}
+	
+	
 }
+}
+else
+time--
+
