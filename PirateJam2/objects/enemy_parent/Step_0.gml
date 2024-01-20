@@ -33,7 +33,9 @@ if (place_meeting(x, y, PlayerControl)) {
 }
 if(place_meeting(x,y,o_projectile)){
 	var projectile_instance = instance_place(x, y, o_projectile);
+	
 	hp =hp- projectile_instance.dmg;
+	instance_destroy(projectile_instance)
 
     // Destroy object if HP is below zero
     if (hp <= 0) {
